@@ -53,9 +53,9 @@
 
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1 class="app-heading">Bulb Toggler</h1>
+<body id="body">
+    <div class="container" id="container">
+        <h1 class="app-heading" id="app-heading">Bulb Toggler</h1>
         <img src="off.png" alt="bulb" id="bulb">
 
     
@@ -69,11 +69,33 @@
         function on(){
             const bulbImgElement = document.getElementById('bulb');
             bulbImgElement.src = "On.png";
+        
+    
+            const bodyElement = document.getElementById('body');
+            bodyElement.style.backgroundColor = '#ffb31a';
+            const containerElement = document.getElementById('container');
+            containerElement.style.backgroundColor = '#f0f0f0';
+
+            const appHeadElement = document.getElementById('app-heading');
+            appHeadElement.style.color = 'black';
+            
         }
         function off(){
             const bulbImgElement = document.getElementById('bulb');
             bulbImgElement.src = "off.png";
+        
+    
+            const bodyElement = document.getElementById('body');
+            bodyElement.style.backgroundColor = '#29293d';
+            const containerElement = document.getElementById('container');
+            containerElement.style.backgroundColor = '#8585ad';
+
+            const appHeadElement = document.getElementById('app-heading');
+            appHeadElement.style.color = '#fff';
+            
         }
+
+        
 
 
     </script>
